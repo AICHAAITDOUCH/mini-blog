@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous" />
+    <title>Mini Blog</title>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+    <link rel="stylesheet" href="home.css" />
+  </head>
+  <body>
+    <nav class="navbar" id="home">
+      <img src="img/logo.png" class="logo" alt="" />
+      <ul class="links-container">
+        <li class="link-item"><a href="#home" class="link">home</a></li>
+        <!-- <li class="link-item"><a href="/editor" class="link">editor</a></li> -->
+     
+      </ul>
+    </nav>
+
+    <header class="header">
+      <div class="content">
+        <h1 class="heading">
+          <span class="small">welcome in the world of</span>
+          blog
+          <span class="no-fill">writing</span>
+        </h1>
+        <a class="btn" id="write">write a blog</a>
+      </div>
+      <!-- Start création d'un espace pour ajouter un blog  -->
+     
+
+      <!-- New Form for adding a new post -->
+      <form class="formuler" id="form_content">
+        <div class="form-group">
+          <!-- Photo du blog -->
+          <div class="form-outline mb-4">
+            <label for="image">Photo du blog :</label>
+            <input
+              type="file"
+              accept="image/*"
+              id="image"
+              class="form-control"
+            />
+          </div>
+
+          <!-- Titre du Blog -->
+          <div class="form-outline mb-4">
+            <label for="titre">Titre du Blog :</label>
+            <input type="text" id="titre" class="form-control" />
+          </div>
+
+          <!-- Résumé du blog -->
+          <div class="form-outline mb-4">
+            <label for="title">Résumé du blog :</label>
+            <textarea class="form-control" id="title" rows="4"></textarea>
+          </div>
+          <!-- Contenu intégral du blog -->
+          <div class="form-outline mb-4">
+            <label for="article">Contenu intégral du blog :</label>
+            <textarea class="form-control" id="article" rows="4"> </textarea>
+          </div>
+
+          <!-- Submit button -->
+          <button
+            type="button"
+            class="btn btn-primary btn-block mb-4"
+            id="send"
+          >
+            Send
+          </button>
+        </div>
+      </form>
+
+      <!-- End création d'un espace pour ajouter un blog  -->
+ 
+    </header>
+<!-- <section>
+  <div class="main">
+    <img src="img/image1.png" alt="">
+    <h1>tagin </h1>
+    <p> zaazedaz </p>
+    
+  </div>
+</section> -->
+    <!-- blog section -->
+    <div class="containre">
+      <section class="blogs-section" id="section_blogs">
+        <!-- <div class="blog-card">
+          <img src="img/header.png" class="blog-image" alt="" />
+          <h1 class="blog-title">Lorem ipsum dolor sit amet consectetur.</h1>
+          <p class="blog-overview">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt
+            incidunt fugiat quos porro repellat harum. Adipisci tempora corporis
+            rem cum.
+          </p>
+          <a href="/" class="btn dark">lire</a>
+          <a href="/" class="btn red">supprimer</a>
+        </div> -->
+        <div class="blog-card" id="blog1">
+          <div class="caroursel ">
+          <img src="img/plat marocain.png" class="blog-image" alt="" />
+          <img src="img/image2.png" class="blog-image" alt="" >
+          <img src="img/image1.png" class="blog-image" alt="">
+        </div>
+          <h1 class="blog-title"> Plat Marocain</h1>
+          <div class="section1">
+            <p class="blog-overview">
+              Découvrez les délices de la cuisine marocaine, où chaque plat est un voyage sensoriel à part entière. Les épices exotiques, les ingrédients frais et les saveurs audacieuses se mêlent dans une symphonie gastronomique qui éveillera vos papilles et stimulera votre imagination culinaire.
+            </p>
+          </div>
+          <div class="section2" id="contenu-cache">
+            <p class="blog-overview">
+              Immergez-vous dans l'art ancestral du tajine, un plat emblématique qui incarne l'héritage culinaire du Maroc. Avec ses viandes tendres, ses légumes colorés et ses épices parfumées, chaque bouchée est une explosion de saveurs qui vous transporte dans les rues animées des souks marocains.
+    
+              Et que dire du couscous, ce joyau de la cuisine marocaine ? Avec sa semoule fine, ses légumes croquants et ses pois chiches fondants, il est bien plus qu'un simple plat, c'est une véritable tradition culinaire transmise de génération en génération.
+              
+              Dans la cuisine marocaine, la fraîcheur des ingrédients est au cœur de chaque recette. Des herbes aromatiques cueillies à la main aux fruits juteux cultivés sous le soleil méditerranéen, chaque aliment est choisi avec soin pour offrir une expérience gustative inoubliable.
+              
+              Que vous soyez un amateur de cuisine ou un voyageur avide de découvertes culinaires, la cuisine marocaine saura éveiller vos sens et vous transporter dans un monde de saveurs envoûtantes. Laissez-vous emporter par cette aventure gustative et explorez les trésors culinaires du Maroc, où chaque repas est une célébration de la vie et de la gastronomie.
+            </p>
+          </div>
+          
+
+          <!-- <a id="bouton" href="/" class="btn dark">lire</a> -->
+          <button id="lire" href="/" class="btn dark">lire plus</button>
+          <button id="supprimer" href="/" class="btn red">supprimer</button>
+          <button id="modifier" href="/" class="btn blue">modifier</button>
+          <!-- <a href="/" class="btn red">supprimer</a> -->
+        </div>
+        <!-- <div class="blog-card">
+          <img src="img/header.png" class="blog-image" alt="" />
+          <h1 class="blog-title">Lorem ipsum dolor sit amet consectetur.</h1>
+          <p class="blog-overview">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt
+            incidunt fugiat quos porro repellat harum. Adipisci tempora corporis
+            rem cum.
+          </p>
+          <a href="/" class="btn dark">lire</a>
+          <a href="/" class="btn red">supprimer</a>
+        </div> -->
+      </section>
+    </div>
+    <Section class="commenter">
+      <h1>commenter</h1>
+      <form id="post-form">
+          <textarea id="post-text" placeholder="Add a comment..."></textarea>
+          <button id="post-button">comment</button>
+      </form>
+      <div id="posts"></div>
+      </div>
+      </Section>
+
+    <script src="index.js"></script>
+   
+<script src="./index.js" defer></script>
+    
+  </body>
+</html>
